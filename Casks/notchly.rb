@@ -1,6 +1,6 @@
 cask "notchly" do
   version "1.0.0"
-  sha256 "beb9a6daf06a4cad4016307725d497318d9c04870251b5b170f7b7be1e9c4b79"
+  sha256 "13612467c5bd8cc6db78b5e71ef4a9d413b973055bab98ba1df516d5430ebcd2"
 
   url "https://github.com/AkshatNaruka/notchly/releases/download/v#{version}/Notchly-#{version}.zip"
   name "Notchly"
