@@ -1,19 +1,16 @@
 cask "notchly" do
-  version "1.0.2"
-  sha256 "5a3fe88f3064c5339f3b5c3cfe3fc76fd1a930d09c343924077b81088df15d5e"
+  version "1.1.0"
+  sha256 "40a99fab95fbd2031e928bcb271f3083f4b4c63a699096070b67ff2d7793d590"
 
-  url "https://github.com/AkshatNaruka/notchly/releases/download/v#{version}/Notchly-#{version}.zip"
+  url "https://github.com/AkshatNaruka/notchly/releases/download/v#{version}/Notchly-latest.dmg"
   name "Notchly"
-  desc "Turn your MacBook notch into a dynamic widget hub"
+  desc "Turn your MacBook notch into a productivity hub"
   homepage "https://notchly.vercel.app"
 
-  # Minimum macOS 14 (Sonoma) — required for notch-aware APIs
   depends_on macos: ">= :sonoma"
 
   app "Notchly.app"
 
-  # Remove macOS quarantine so Gatekeeper allows the adhoc-signed app to open
-  # without prompting the user to allow an "unidentified developer".
   zap trash: [
     "~/Library/Application Support/Notchly",
     "~/Library/Preferences/com.notchly.app.plist",
